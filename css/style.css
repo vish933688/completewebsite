@@ -1,0 +1,383 @@
+*{
+  margin: 0px;
+
+}
+body.html{
+  font-family: Roboto,sans-sarif arial;
+  background: #f0f3fa;
+}
+.width-100{
+width:100%;
+float:left;
+}
+.container{
+width:100%;
+height:auto;
+margin:0px auto;
+ 
+}
+.top-header{
+background: #2196f3;
+padding:5px 0px;
+border-bottom:1px solid #3131315e;
+}
+.news-list{
+background: #fff;
+color:red;
+padding:6px;
+font-size:20px;
+}
+.headquote{
+font-size:18px;
+color:white;
+width:80%;
+
+}
+.heaer-menu{
+  position: relative;
+box-shadow: 0px 2px 5px 0px #00000036;
+}
+.logo{
+width:fit-content;
+float:left;
+}
+.main-fmenu{
+list-style:none;
+float:right;
+margin-top:20px;
+}
+.main-menu a{
+font-weight: 500;
+color:#3a3a3a;
+text-decoration: none;
+}
+.main-menu li{
+float:left;
+padding:12px 15px;
+text-decoration: none;
+
+}
+.slider-width{
+  width:100%;
+  height:300px;
+}
+.margin-top-50{
+margin-top: 50px;
+
+}
+.heading-sect{
+width:100%;
+float:left;
+border-bottom: 1px;
+padding-bottom: 0px;
+margin:0px;
+margin-bottom: 15px;
+padding-top:15px;
+padding-left:15px;
+background:blue ;
+color:white;
+}
+.head-title{
+margin:0px;
+padding:0px;
+font-size:15px;
+font-weight:600;
+padding-bottom:5px;
+}
+.latest-news-ul{
+  list-style:none;
+  padding:0px;
+  line-height:40px;
+  
+}
+.latest-news{
+  
+  margin-left: 10px;
+  margin-right: 10px;
+  background: white;
+  padding:20px;
+  height:350px;
+  margin-bottom:30px;
+}
+.width-33{
+  width:33%;
+  float:left;
+  border:1px solid black;
+}
+.event-list{
+  margin-left: 10px;
+  margin-right: 10px;
+  background: white;
+  padding:20px;
+  height:350px;
+  margin-bottom:30px;
+}
+.upcoming-event-list{
+padding:0px;
+list-style: none;
+}
+.upcoming-event-list li{
+  width:100%;
+  float: left;
+  margin-bottom: 15px;
+}
+
+.event-date{
+background: #2196f3;
+width: 30px;
+float: left;
+color: #f0f3fa;
+padding: 8px;
+margin-right: 10px;
+text-align: center;
+font-size: 14px;
+}
+.notice-board{
+  margin-left: 10px;
+  margin-right: 10px;
+  background: white;
+  padding:20px;
+  height:350px;
+  margin-bottom:30px;
+}
+.notice-board-list{
+padding:0px;
+list-style: none;
+line-height: 40px;
+
+}
+.notice-board-list li{
+width: 100%;
+float: left;
+margin-bottom: 15px;
+
+}
+.our-principal{
+  margin-left: 10px;
+  margin-right: 10px;
+  background: white;
+  padding:20px;
+  height:350px;
+  margin-bottom:30px;
+}
+.useful-info-ul{
+list-style: none;
+}
+.useful-info-ul li{
+margin-bottom: 15px;
+border-bottom: 1px solid grey;
+padding-bottom: 15px;
+
+}
+.useful-info-ul a{
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+}
+.gov-sec-style{
+margin-bottom: 30px;
+border-bottom: 1px solid grey;
+padding-bottom: 30px;
+}
+.governor-name{
+font-size: 16px;
+color:black;
+font-weight:bold ;
+padding-left: 10px;
+margin-top: 20px;
+}
+.governor-designation{
+  font-size: 16px;
+  color:black;
+ 
+  padding-left: 10px;
+  margin-top: 6px;
+}
+.governor-img{
+width:100%;
+}
+.width-40{
+width:40%;
+float:left;
+}
+.width-60{
+width:60%;
+float:left;
+}
+.about-us{
+  margin-left: 10px;
+  margin-right: 10px;
+  background: white;
+  padding:20px;
+  height:350px;
+  margin-bottom:30px;
+}
+.certificate{
+  margin-left: 10px;
+  margin-right: 10px;
+  background: white;
+  padding:20px;
+  height:350px;
+  margin-bottom:30px;
+}
+.gallery-head-style{
+font-size: 28px;
+color:black;
+margin-bottom: 5px;
+border:1px solid grey;
+background: #f0f3fa;
+padding:2px 0px;
+}
+.width-25{
+width:25%;
+float:left;
+
+}
+.gallery-img{
+height: 250px;
+width:100%;
+
+}
+.courses-head-style{
+font-size: 20px;
+color:red;
+margin-bottom: 5px;
+
+}
+.courses-marquee{
+  height: 100px;
+  
+}
+.courses-marquee img{
+  width:100px;
+  height:100px;
+}
+.footer{
+background: #3a3a3a;
+padding:50px 0px;
+
+
+}
+.quicklink-heading{
+font-size: 18px;
+font-weight: bold;
+color:#f0f3fa;
+margin-bottom: 10px;
+
+}
+.quicklink-menu{
+list-style: none;
+padding-left: 10px;
+
+}
+.quicklink-menu li a{
+  color:#f0f3fa;
+  line-height: 2.5;
+  font-size: 15px;
+  text-decoration: none;
+}
+.get-in-touch{
+list-style: none;
+padding-left: 10px;
+
+}
+.get-in-touch li{
+text-decoration: none;
+padding-left:10px;
+color:#f0f3fa;
+line-height: 2.5;
+font-size: 15px;
+
+}
+.get-in-touch li a{
+  color:#f0f3fa;
+  line-height: 2.5;
+  font-size: 15px;
+  text-decoration: none;
+}
+.get-in-touch li i{
+color:red;
+font-size: 20px;
+}
+.footer-email{
+font-size: 15px;
+font-weight: bold;
+color:#f0f3fa;
+text-decoration: none;
+}
+.footer-website{
+  font-size: 12px;
+font-weight: bold;
+color:#f0f3fa;
+text-decoration: none;
+}
+.social-media{
+list-style: none;
+margin-top: 10px;
+
+}
+.social-media li{
+float: left;
+padding: 0px 8px;
+
+}
+.social-media li a img{
+width:30px;
+
+}
+.footer2-bacbor{
+background: #3a3a3a;
+padding:10px 0px;
+border-top: 1px solid grey;
+
+}
+.footer2-content{
+  font-size: 14px;
+  color:#f0f3fa;
+  text-align: center;
+  
+}
+/*
+.stuhead{
+  border:2px solid voilet;
+  height:1000px;
+  width:100%;
+  background-color: rgb(250, 250, 13);
+}
+.stuchild{
+  border:2px solid rgb(19, 19, 19);
+  width:100%;
+  height:400px;
+  
+ 
+}
+.studata{
+  border:2px solid purple;
+  width:100%;
+  height:400px;
+  
+  
+}
+.studata h1{
+  background: #f0f3fa;
+  text-decoration: none;
+  text-align: center;
+
+  background-color: maroon;
+  
+}
+.studtabledata{
+
+width:100%;
+height: fit-content;
+text-align: center;
+text-transform:10px;
+padding:10px;
+border:2px solid rgb(78, 12, 230);
+}
+.stufoot{
+  width:100%;
+  border:3px dotted red;
+}
+  */
+ 

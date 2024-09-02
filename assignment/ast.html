@@ -1,0 +1,23 @@
+<form method="POST" action="add_assignment.php">
+    <input type="hidden" name="action" value="add">
+    
+    <label for="studentID">Student ID:</label>
+    <input type="text" id="studentID" name="studentID" required>
+    
+    <label for="teacherID">Teacher ID:</label>
+    <input type="text" id="teacherID" name="teacherID" required>
+    
+    <label for="subjectID">Subject ID:</label>
+    <input type="text" id="subjectID" name="subjectID" required>
+    
+    <label for="assignmentTitle">Assignment Title:</label>
+    <input type="text" id="assignmentTitle" name="assignmentTitle" required>
+    
+    <label for="assignmentDescription">Assignment Description:</label>
+    <textarea id="assignmentDescription" name="assignmentDescription" required></textarea>
+    
+    <label for="dueDate">Due Date:</label>
+    <input type="date" id="dueDate" name="dueDate" required>
+    
+    <button type="submit">Add Assignment</button>
+</form>

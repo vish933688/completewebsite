@@ -1,0 +1,21 @@
+.tu1{
+  margin:0px 10px;
+  padding:0px 10px;
+  border:1px solid red;
+  width:200px;
+  height:300px;
+}
+.student{
+  border:1px solid black;
+  width:100px;
+  height:150px;
+}
+div.head-title{
+  border:1px solid red;
+  margin:1px;
+  height:100px;
+  width:auto;
+}
+div.head-style{
+  text-align: center;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+</head>
+<body>
+    <h2>Verify Your Mobile Number and Email</h2>
+    <form action="send_otp.php" method="POST">
+        <label for="mobileNo">Mobile Number:</label>
+        <input type="text" id="mobileNo" name="mobileNo" required><br><br>
+        
+        <label for="emailId">Email ID:</label>
+        <input type="email" id="emailId" name="emailId" required><br><br>
+        
+        <input type="submit" value="Send OTP">
+    </form>
+</body>
+</html>

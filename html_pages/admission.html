@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form - School Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #bbb 1px solid;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+        .form-container input, .form-container select, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-container button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background: #555;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Vishal Public School</h1>
+</header>
+
+<div class="container">
+    <div class="form-container">
+        <h2>Student Admission Form</h2>
+        <form action="submit_admission.php" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full_name" required>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Academic Information</legend>
+                <label for="current-school">Current School:</label>
+                <input type="text" id="current-school" name="current_school" required>
+
+                <label for="grade">Class Applying For:</label>
+                <select id="grade" name="grade" required>
+                    <option value="">Select Class</option>
+                    <option value="1">Class 1</option>
+                    <option value="2">Class 2</option>
+                    <option value="3">Class 3</option>
+                    <option value="1">Class 4</option>
+                    <option value="2">Class 5</option>
+                    <option value="3">Class 6</option>
+                    <option value="1">Class 7</option>
+                    <option value="2">Class 8</option>
+                    <option value="3">Class 9</option>
+                    <option value="1">Class 10</option>
+                    <option value="2">Class 11</option>
+                    <option value="3">Class 12</option>
+                    <!-- Add more grades as needed -->
+                </select>
+
+                <label for="previous-achievements">Previous Achievements (if any):</label>
+                <textarea id="previous-achievements" name="previous_achievements" rows="4"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Parent/Guardian Information</legend>
+                <label for="guardian-name">Guardian Name:</label>
+                <input type="text" id="guardian-name" name="guardian_name" required>
+
+                <label for="guardian-phone">Guardian Phone Number:</label>
+                <input type="tel" id="guardian-phone" name="guardian_phone" required>
+
+                <label for="guardian-email">Guardian Email:</label>
+                <input type="email" id="guardian-email" name="guardian_email" required>
+            </fieldset>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 School Name. All rights reserved.
+</footer>
+
+</body>
+</html>

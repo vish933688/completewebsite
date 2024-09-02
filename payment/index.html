@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razorpay Payment Gateway</title>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            background-color: #004080;
+            transform: scale(1.1);
+        }
+        .content {
+            padding: 40px;
+            margin-top: 20px;
+            background-color: #fff;
+            max-width: 500px;
+            margin: 40px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        .content:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        input[type="text"]:focus {
+            border-color: #007bff;
+            box-shadow: inset 0 1px 5px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+        #payButton {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        #payButton:hover {
+            background-color: #0056b3;
+            box-shadow: 0 4px 10px rgba(0, 91, 187, 0.3);
+        }
+        #payButton:active {
+            background-color: #004080;
+        }
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your School Name</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Student Login</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <div class="content">
+        <form id="paymentForm">
+            <h2>Make a Payment</h2>
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount" required>
+            <button type="button" id="payButton">Pay with Razorpay</button>
+        </form>
+    </div>
+    <footer>
+        &copy; 2024 Your School Name. All Rights Reserved.
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            // Form validation: Ensure amount is numeric and greater than 0
+            $('#payButton').click(function() {
+                var amount = $('#amount').val();
+                if (!$.isNumeric(amount) || amount <= 0) {
+                    alert('Please enter a valid amount.');
+                    return false;
+                }
+                amount *= 100; // Convert to paisa
+
+                // Razorpay payment options
+                var options = {
+                    "key": "rzp_test_m5XZYW8t6K0K99", // Replace with your Razorpay Key ID
+                    "amount": amount,
+                    "currency": "INR",
+                    "name": "Your Company Name",
+                    "description": "Payment Description",
+                    "handler": function(response) {
+                        alert("Payment successful. Razorpay Payment ID: " + response.razorpay_payment_id);
+                        // Optionally, you can redirect to a success page or further process the payment
+                    },
+                    "prefill": {
+                        "name": "Your Name",
+                        "email": "your_email@example.com",
+                        "contact": "9999999999"
+                    },
+                    "theme": {
+                        "color": "#3399cc"
+                    }
+                };
+                var rzp1 = new Razorpay(options);
+                rzp1.open();
+            });
+        });
+    </script>
+</body>
+</html>
